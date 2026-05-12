@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ER早打ち練習</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="petal_layer"></div>
+    <div id="bg-layer"></div>
+    <div id="effect-layer"></div>
+    <div id="game-layer">
+        <div id="question_area"></div>
+    </div>
+    <div id="ui-layer">
+        <div id="score_area">
+          <div>進捗: <span id="progress">0 / 0</span></div>
+          <div>連続正答: <span id="streak">0</span></div>
+        </div>
+
+        <div id="status_panel">
+            <div id="streak_display">連続: 0</div>
+            <div id="speed_display">速度: Lv.1</div>
+        </div>
+
+        <div class="container">
+        <h1 id="title">
+          医療用タイピング<br>
+          「桜うち」漢字帳
+        </h1>
+
+    <!-- Setup セクション -->
+    <div id="setup">
+        <select id="department"></select>
+        <select id="level">
+            <option value="basic">初級</option>
+            <option value="intermediate">中級</option>
+            <option value="advanced">上級</option>
+        </select>
+        <div id="mode_switch">
+          <span>自動難易度調整Classic版</span>
+        </div>
+        <button type="button" id="start_button">ケース開始</button>
+        <button id="cancel_button" type="button">キャンセル</button>
+    </div>
+
+    <!-- Game セクション（#question_area は game-layer 内に配置） -->
+    <div id="game">
+        <div id="answer_row">
+            <input id="input" placeholder="日本語（漢字）で入力" autocomplete="off">
+            <button id="stop_button" type="button">中止</button>
+        </div>
+    </div>
+
+    <!-- Result セクション -->
+    <div id="result">
+        <div id="result_text"></div>
+        <div id="result_area"></div>
+        <button type="button" id="reset_button">もう一度</button>
+    </div>
+        </div>
+    </div>
+    <script src="/static/script_flash.js?v=999"></script>
+</body>
+</html>
