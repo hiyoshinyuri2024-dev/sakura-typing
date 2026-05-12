@@ -1,0 +1,858 @@
+{
+    "emergency": {
+        "basic": [
+            {
+                "kanji": "ショック",
+                "abbr": "ショック"
+            },
+            {
+                "kanji": "頻呼吸",
+                "abbr": "頻呼吸"
+            },
+            {
+                "kanji": "意識レベル",
+                "abbr": "意識レベル"
+            },
+            {
+                "kanji": "発熱",
+                "abbr": "発熱"
+            },
+            {
+                "kanji": "悪寒",
+                "abbr": "悪寒"
+            },
+            {
+                "kanji": "倦怠感",
+                "abbr": "倦怠感"
+            },
+            {
+                "kanji": "咽頭痛",
+                "abbr": "咽頭痛"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "外傷性くも膜下出血",
+                "abbr": "外傷性くも膜下出血"
+            },
+            {
+                "kanji": "心タンポナーデ",
+                "abbr": "心タンポナーデ"
+            },
+            {
+                "kanji": "急性心筋梗塞",
+                "abbr": "急性心筋梗塞"
+            },
+            {
+                "kanji": "脳卒中",
+                "abbr": "脳卒中"
+            },
+            {
+                "kanji": "肺炎",
+                "abbr": "肺炎"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "敗血症性ショック",
+                "abbr": "敗血症性ショック"
+            },
+            {
+                "kanji": "急性大動脈解離",
+                "abbr": "急性大動脈解離"
+            },
+            {
+                "kanji": "多臓器不全",
+                "abbr": "多臓器不全"
+            },
+            {
+                "kanji": "DIC",
+                "abbr": "DIC"
+            },
+            {
+                "kanji": "ARDS",
+                "abbr": "ARDS"
+            }
+        ]
+    },
+    "trauma": {
+        "basic": [
+            {
+                "kanji": "外傷",
+                "abbr": "外傷"
+            },
+            {
+                "kanji": "転倒",
+                "abbr": "転倒"
+            },
+            {
+                "kanji": "交通事故",
+                "abbr": "交通事故"
+            },
+            {
+                "kanji": "意識消失",
+                "abbr": "意識消失"
+            },
+            {
+                "kanji": "出血",
+                "abbr": "出血"
+            },
+            {
+                "kanji": "変形",
+                "abbr": "変形"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "開放創",
+                "abbr": "開放創"
+            },
+            {
+                "kanji": "骨折疑い",
+                "abbr": "骨折疑い"
+            },
+            {
+                "kanji": "頭部外傷",
+                "abbr": "頭部外傷"
+            },
+            {
+                "kanji": "胸部外傷",
+                "abbr": "胸部外傷"
+            },
+            {
+                "kanji": "腹部外傷",
+                "abbr": "腹部外傷"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "骨折",
+                "abbr": "骨折"
+            },
+            {
+                "kanji": "CT",
+                "abbr": "CT"
+            },
+            {
+                "kanji": "XP",
+                "abbr": "XP"
+            },
+            {
+                "kanji": "FAST",
+                "abbr": "FAST"
+            },
+            {
+                "kanji": "止血",
+                "abbr": "止血"
+            },
+            {
+                "kanji": "固定",
+                "abbr": "固定"
+            },
+            {
+                "kanji": "輸液",
+                "abbr": "輸液"
+            },
+            {
+                "kanji": "緊急手術",
+                "abbr": "緊急手術"
+            }
+        ]
+    },
+    "infection": {
+        "basic": [
+            {
+                "kanji": "発熱",
+                "abbr": "発熱"
+            },
+            {
+                "kanji": "悪寒",
+                "abbr": "悪寒"
+            },
+            {
+                "kanji": "倦怠感",
+                "abbr": "倦怠感"
+            },
+            {
+                "kanji": "咽頭痛",
+                "abbr": "咽頭痛"
+            },
+            {
+                "kanji": "発赤",
+                "abbr": "発赤"
+            },
+            {
+                "kanji": "腫脹",
+                "abbr": "腫脹"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "膿",
+                "abbr": "膿"
+            },
+            {
+                "kanji": "リンパ節腫脹",
+                "abbr": "リンパ節腫脹"
+            },
+            {
+                "kanji": "敗血症",
+                "abbr": "敗血症"
+            },
+            {
+                "kanji": "蜂窩織炎",
+                "abbr": "蜂窩織炎"
+            },
+            {
+                "kanji": "扁桃炎",
+                "abbr": "扁桃炎"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "尿路感染",
+                "abbr": "尿路感染"
+            },
+            {
+                "kanji": "肺炎",
+                "abbr": "肺炎"
+            },
+            {
+                "kanji": "敗血症性ショック",
+                "abbr": "敗血症性ショック"
+            },
+            {
+                "kanji": "抗生物質",
+                "abbr": "抗生物質"
+            },
+            {
+                "kanji": "培養検査",
+                "abbr": "培養検査"
+            }
+        ]
+    },
+    "endocrine": {
+        "basic": [
+            {
+                "kanji": "糖尿病",
+                "abbr": "糖尿病"
+            },
+            {
+                "kanji": "甲状腺腫",
+                "abbr": "甲状腺腫"
+            },
+            {
+                "kanji": "肥満",
+                "abbr": "肥満"
+            },
+            {
+                "kanji": "多飲多尿",
+                "abbr": "多飲多尿"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "インスリン抵抗性",
+                "abbr": "インスリン抵抗性"
+            },
+            {
+                "kanji": "甲状腺機能亢進症",
+                "abbr": "甲状腺機能亢進症"
+            },
+            {
+                "kanji": "副腎不全",
+                "abbr": "副腎不全"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "糖尿病性ケトアシドーシス",
+                "abbr": "糖尿病性ケトアシドーシス"
+            },
+            {
+                "kanji": "甲状腺クリーゼ",
+                "abbr": "甲状腺クリーゼ"
+            },
+            {
+                "kanji": "下垂体腫瘍",
+                "abbr": "下垂体腫瘍"
+            }
+        ]
+    },
+    "allergy": {
+        "basic": [
+            {
+                "kanji": "アレルギー",
+                "abbr": "アレルギー"
+            },
+            {
+                "kanji": "発疹",
+                "abbr": "発疹"
+            },
+            {
+                "kanji": "かゆみ",
+                "abbr": "かゆみ"
+            },
+            {
+                "kanji": "鼻水",
+                "abbr": "鼻水"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "アナフィラキシー",
+                "abbr": "アナフィラキシー"
+            },
+            {
+                "kanji": "気管支喘息",
+                "abbr": "気管支喘息"
+            },
+            {
+                "kanji": "アトピー性皮膚炎",
+                "abbr": "アトピー性皮膚炎"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "アナフィラキシーショック",
+                "abbr": "アナフィラキシーショック"
+            },
+            {
+                "kanji": "食物アレルギー",
+                "abbr": "食物アレルギー"
+            },
+            {
+                "kanji": "薬物アレルギー",
+                "abbr": "薬物アレルギー"
+            }
+        ]
+    },
+    "urology": {
+        "basic": [
+            {
+                "kanji": "頻尿",
+                "abbr": "頻尿"
+            },
+            {
+                "kanji": "血尿",
+                "abbr": "血尿"
+            },
+            {
+                "kanji": "排尿痛",
+                "abbr": "排尿痛"
+            },
+            {
+                "kanji": "腎臓痛",
+                "abbr": "腎臓痛"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "尿路感染",
+                "abbr": "尿路感染"
+            },
+            {
+                "kanji": "腎結石",
+                "abbr": "腎結石"
+            },
+            {
+                "kanji": "前立腺肥大",
+                "abbr": "前立腺肥大"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "急性腎不全",
+                "abbr": "急性腎不全"
+            },
+            {
+                "kanji": "尿路結石",
+                "abbr": "尿路結石"
+            },
+            {
+                "kanji": "前立腺癌",
+                "abbr": "前立腺癌"
+            }
+        ]
+    },
+    "obgyn": {
+        "basic": [
+            {
+                "kanji": "月経痛",
+                "abbr": "月経痛"
+            },
+            {
+                "kanji": "不正出血",
+                "abbr": "不正出血"
+            },
+            {
+                "kanji": "妊娠",
+                "abbr": "妊娠"
+            },
+            {
+                "kanji": "出産",
+                "abbr": "出産"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "子宮内膜症",
+                "abbr": "子宮内膜症"
+            },
+            {
+                "kanji": "卵巣嚢腫",
+                "abbr": "卵巣嚢腫"
+            },
+            {
+                "kanji": "早産",
+                "abbr": "早産"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "子宮頸癌",
+                "abbr": "子宮頸癌"
+            },
+            {
+                "kanji": "卵巣癌",
+                "abbr": "卵巣癌"
+            },
+            {
+                "kanji": "帝王切開",
+                "abbr": "帝王切開"
+            }
+        ]
+    },
+    "pediatrics": {
+        "basic": [
+            {
+                "kanji": "発熱",
+                "abbr": "発熱"
+            },
+            {
+                "kanji": "咳",
+                "abbr": "咳"
+            },
+            {
+                "kanji": "嘔吐",
+                "abbr": "嘔吐"
+            },
+            {
+                "kanji": "下痢",
+                "abbr": "下痢"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "肺炎",
+                "abbr": "肺炎"
+            },
+            {
+                "kanji": "気管支炎",
+                "abbr": "気管支炎"
+            },
+            {
+                "kanji": "急性胃腸炎",
+                "abbr": "急性胃腸炎"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "小児喘息",
+                "abbr": "小児喘息"
+            },
+            {
+                "kanji": "川崎病",
+                "abbr": "川崎病"
+            },
+            {
+                "kanji": "小児糖尿病",
+                "abbr": "小児糖尿病"
+            }
+        ]
+    },
+    "psychiatry": {
+        "basic": [
+            {
+                "kanji": "せん妄",
+                "abbr": "せん妄"
+            },
+            {
+                "kanji": "不眠",
+                "abbr": "不眠"
+            },
+            {
+                "kanji": "うつ",
+                "abbr": "うつ"
+            },
+            {
+                "kanji": "不安",
+                "abbr": "不安"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "統合失調症",
+                "abbr": "統合失調症"
+            },
+            {
+                "kanji": "双極性障害",
+                "abbr": "双極性障害"
+            },
+            {
+                "kanji": "パニック障害",
+                "abbr": "パニック障害"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "躁状態",
+                "abbr": "躁状態"
+            },
+            {
+                "kanji": "精神病エピソード",
+                "abbr": "精神病エピソード"
+            },
+            {
+                "kanji": "PTSD",
+                "abbr": "PTSD"
+            }
+        ]
+    },
+    "orthopedics": {
+        "basic": [
+            {
+                "kanji": "骨折",
+                "abbr": "骨折"
+            },
+            {
+                "kanji": "関節痛",
+                "abbr": "関節痛"
+            },
+            {
+                "kanji": "背中痛",
+                "abbr": "背中痛"
+            },
+            {
+                "kanji": "捻挫",
+                "abbr": "捻挫"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "変形性関節症",
+                "abbr": "変形性関節症"
+            },
+            {
+                "kanji": "椎間板ヘルニア",
+                "abbr": "椎間板ヘルニア"
+            },
+            {
+                "kanji": "骨粗鬆症",
+                "abbr": "骨粗鬆症"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "人工関節置換術",
+                "abbr": "人工関節置換術"
+            },
+            {
+                "kanji": "脊椎手術",
+                "abbr": "脊椎手術"
+            },
+            {
+                "kanji": "骨腫瘍",
+                "abbr": "骨腫瘍"
+            }
+        ]
+    },
+    "dermatology": {
+        "basic": [
+            {
+                "kanji": "発疹",
+                "abbr": "発疹"
+            },
+            {
+                "kanji": "かゆみ",
+                "abbr": "かゆみ"
+            },
+            {
+                "kanji": "水疱",
+                "abbr": "水疱"
+            },
+            {
+                "kanji": "紅斑",
+                "abbr": "紅斑"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "アトピー性皮膚炎",
+                "abbr": "アトピー性皮膚炎"
+            },
+            {
+                "kanji": "乾癬",
+                "abbr": "乾癬"
+            },
+            {
+                "kanji": "蕁麻疹",
+                "abbr": "蕁麻疹"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "皮膚癌",
+                "abbr": "皮膚癌"
+            },
+            {
+                "kanji": "メラノーマ",
+                "abbr": "メラノーマ"
+            },
+            {
+                "kanji": "自己免疫性皮膚疾患",
+                "abbr": "自己免疫性皮膚疾患"
+            }
+        ]
+    },
+    "ent": {
+        "basic": [
+            {
+                "kanji": "耳痛",
+                "abbr": "耳痛"
+            },
+            {
+                "kanji": "鼻水",
+                "abbr": "鼻水"
+            },
+            {
+                "kanji": "喉の痛み",
+                "abbr": "喉の痛み"
+            },
+            {
+                "kanji": "めまい",
+                "abbr": "めまい"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "中耳炎",
+                "abbr": "中耳炎"
+            },
+            {
+                "kanji": "副鼻腔炎",
+                "abbr": "副鼻腔炎"
+            },
+            {
+                "kanji": "扁桃炎",
+                "abbr": "扁桃炎"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "聴神経腫瘍",
+                "abbr": "聴神経腫瘍"
+            },
+            {
+                "kanji": "喉頭癌",
+                "abbr": "喉頭癌"
+            },
+            {
+                "kanji": "慢性中耳炎",
+                "abbr": "慢性中耳炎"
+            }
+        ]
+    },
+    "ophthalmology": {
+        "basic": [
+            {
+                "kanji": "視力低下",
+                "abbr": "視力低下"
+            },
+            {
+                "kanji": "眼痛",
+                "abbr": "眼痛"
+            },
+            {
+                "kanji": "充血",
+                "abbr": "充血"
+            },
+            {
+                "kanji": "涙目",
+                "abbr": "涙目"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "緑内障",
+                "abbr": "緑内障"
+            },
+            {
+                "kanji": "白内障",
+                "abbr": "白内障"
+            },
+            {
+                "kanji": "網膜剥離",
+                "abbr": "網膜剥離"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "糖尿病性網膜症",
+                "abbr": "糖尿病性網膜症"
+            },
+            {
+                "kanji": "加齢黄斑変性",
+                "abbr": "加齢黄斑変性"
+            },
+            {
+                "kanji": "眼底出血",
+                "abbr": "眼底出血"
+            }
+        ]
+    },
+    "geriatrics": {
+        "basic": [
+            {
+                "kanji": "認知症",
+                "abbr": "認知症"
+            },
+            {
+                "kanji": "転倒",
+                "abbr": "転倒"
+            },
+            {
+                "kanji": "尿失禁",
+                "abbr": "尿失禁"
+            },
+            {
+                "kanji": "便秘",
+                "abbr": "便秘"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "アルツハイマー病",
+                "abbr": "アルツハイマー病"
+            },
+            {
+                "kanji": "パーキンソン病",
+                "abbr": "パーキンソン病"
+            },
+            {
+                "kanji": "骨粗鬆症",
+                "abbr": "骨粗鬆症"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "多臓器不全",
+                "abbr": "多臓器不全"
+            },
+            {
+                "kanji": "高齢者うつ",
+                "abbr": "高齢者うつ"
+            },
+            {
+                "kanji": "サルコペニア",
+                "abbr": "サルコペニア"
+            }
+        ]
+    },
+    "toxicology": {
+        "basic": [
+            {
+                "kanji": "中毒",
+                "abbr": "中毒"
+            },
+            {
+                "kanji": "吐き気",
+                "abbr": "吐き気"
+            },
+            {
+                "kanji": "嘔吐",
+                "abbr": "嘔吐"
+            },
+            {
+                "kanji": "意識障害",
+                "abbr": "意識障害"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "薬物中毒",
+                "abbr": "薬物中毒"
+            },
+            {
+                "kanji": "アルコール中毒",
+                "abbr": "アルコール中毒"
+            },
+            {
+                "kanji": "一酸化炭素中毒",
+                "abbr": "一酸化炭素中毒"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "重金属中毒",
+                "abbr": "重金属中毒"
+            },
+            {
+                "kanji": "農薬中毒",
+                "abbr": "農薬中毒"
+            },
+            {
+                "kanji": "解毒療法",
+                "abbr": "解毒療法"
+            }
+        ]
+    },
+    "burn": {
+        "basic": [
+            {
+                "kanji": "熱傷",
+                "abbr": "熱傷"
+            },
+            {
+                "kanji": "火傷",
+                "abbr": "火傷"
+            },
+            {
+                "kanji": "水疱",
+                "abbr": "水疱"
+            },
+            {
+                "kanji": "疼痛",
+                "abbr": "疼痛"
+            }
+        ],
+        "intermediate": [
+            {
+                "kanji": "II度熱傷",
+                "abbr": "II度熱傷"
+            },
+            {
+                "kanji": "III度熱傷",
+                "abbr": "III度熱傷"
+            },
+            {
+                "kanji": "感染",
+                "abbr": "感染"
+            }
+        ],
+        "advanced": [
+            {
+                "kanji": "広範囲熱傷",
+                "abbr": "広範囲熱傷"
+            },
+            {
+                "kanji": "熱傷ショック",
+                "abbr": "熱傷ショック"
+            },
+            {
+                "kanji": "皮膚移植",
+                "abbr": "皮膚移植"
+            }
+        ]
+    }
+}
