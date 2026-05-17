@@ -23,7 +23,7 @@ const DEPT_LABELS = {
 const SPEED_LEVELS = [
     9000,
     6000,
-    5125
+    4800 // 上級は中級より約20%速い落下速度に変更
 ];
 
 const FEEDBACK_MS = 380;
@@ -315,8 +315,13 @@ function startFallAnimation(text) {
 
             // ======================================================
             // 通過時点で即ミス
+            // 入力欄を自動クリアして次の問題に残らないようにする
             // ======================================================
             if (y >= inputTop) {
+                // IME変換中も含めて入力を完全にリセット
+                input.value = "";
+                input.blur();
+                input.focus();
                 handleMiss();
                 return;
             }
@@ -702,6 +707,9 @@ function finishCase() {
             </p>
             <p style="text-align:center;">
                 正答率：${data.accuracy.toFixed(1)}%
+            </p>
+            <p style="text-align:center; font-size:20px; color:#b84a6b; margin-top:12px; font-weight:bold;">
+                ${data.comment}
             </p>
         `;
 
