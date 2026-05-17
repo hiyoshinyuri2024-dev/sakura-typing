@@ -1,16 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import json
 import random
-import requests
 import os
-
-print("=== DEBUG START ===")
-print("現在の作業ディレクトリ:", os.getcwd())
-print("このファイルの場所:", os.path.abspath(__file__))
-print("templates存在:", os.path.exists("templates"))
-print("index.html存在:", os.path.exists("templates/index.html"))
-print("=== DEBUG END ===")
-print("★★実行中ファイル:", __file__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -46,7 +37,6 @@ def select_questions(dept, level):
     if len(vocab_list) >= 10:
         return random.sample(vocab_list, 10)
 
-    # 基本レベル語彙だけでは10問にならない場合は、同じ診療科の他レベルから補完
     questions = vocab_list.copy()
     other_vocab = []
     for lvl, items in departments[dept].items():
@@ -59,7 +49,6 @@ def select_questions(dept, level):
         if word not in questions:
             questions.append(word)
 
-    # それでも10問に満たない場合は同じレベルから重複を許して補完
     while len(questions) < 10:
         questions.append(random.choice(vocab_list))
 
@@ -69,7 +58,6 @@ def select_questions(dept, level):
 def normalize_question_item(item):
     """
     フラッシュ用の安全な1件: {"kanji": "...", "abbr": "..."}
-    departments.json 統一後は dict + 非空 kanji を想定。古い文字列入力も最小限フォロー。
     """
     if item is None:
         return None
@@ -103,9 +91,6 @@ def normalize_question_item(item):
 
 
 def normalize_questions(raw_questions):
-    """
-    Ensure questions is always a list of normalized objects.
-    """
     if raw_questions is None:
         return []
 
@@ -120,21 +105,19 @@ def normalize_questions(raw_questions):
     return normalized
 
 # -----------------------------
-# Ollama API でコメント生成
+# 正答率に応じたコメント生成
 # -----------------------------
-def generate_comment(prompt):
-    url = "http://localhost:11434/api/generate"
-    payload = {
-        "model": "gemma:2b",
-        "prompt": prompt,
-        "stream": False
-    }
-    try:
-        response = requests.post(url, json=payload, timeout=5)
-        data = response.json()
-        return data.get("response", "コメント生成に失敗しました。")
-    except Exception as e:
-        return f"エラー: {str(e)}"
+def generate_comment(accuracy):
+    if accuracy == 100:
+        return "満点です！素晴らしい！🌸"
+    elif accuracy >= 80:
+        return "よくできました！あと少しで満点です！🌸"
+    elif accuracy >= 60:
+        return "なかなかいいですね！練習を続けましょう！"
+    elif accuracy >= 40:
+        return "もう少しです！繰り返し挑戦してみましょう！"
+    else:
+        return "難しい用語も多いですが、続けることが大切です！💪"
 
 # -----------------------------
 # API: ケース開始（単語モード）
@@ -155,20 +138,18 @@ def start_case():
     })
 
 # -----------------------------
-# ★追加：API: ケースモード（SOAP用）
+# API: ケースモード（SOAP用）
 # -----------------------------
 @app.route("/start_case_v2", methods=["POST"])
 def start_case_v2():
     data = request.json
     dept = data.get("department")
 
-    # バリデーション
     if dept not in departments:
         return jsonify({"error": "invalid department"}), 400
 
     case = departments[dept]
 
-    # JSONをそのまま返す（構造を壊さない）
     return jsonify({
         "subjective": case.get("subjective", []),
         "objective": case.get("objective", []),
@@ -178,19 +159,16 @@ def start_case_v2():
     })
 
 # -----------------------------
-# API: ケース終了（AIコメント）
+# API: ケース終了（コメント）
 # -----------------------------
 @app.route("/finish_case", methods=["POST"])
 def finish_case():
     data = request.json
     correct = data.get("correct", 0)
     total = data.get("total", 10)
-    mistakes = data.get("mistakes", [])
 
     accuracy = (correct / total) * 100 if total > 0 else 0
-    comment = generate_comment(
-        f"医学用語フラッシュ結果: 正解数{correct}/{total}。短く日本語で一言。"
-    )
+    comment = generate_comment(accuracy)
 
     return jsonify({
         "accuracy": accuracy,
@@ -220,7 +198,7 @@ def index():
     return render_template("index.html")
 
 # -----------------------------
-# Flask 起動（自動ブラウザ）
+# Flask 起動
 # -----------------------------
 if __name__ == "__main__":
     import threading, webbrowser, time
@@ -229,11 +207,9 @@ if __name__ == "__main__":
         url = "http://127.0.0.1:5000"
         time.sleep(5)
         try:
-            opened = webbrowser.open(url)
-            print("webbrowser.open returned:", opened)
+            webbrowser.open(url)
         except Exception as e:
-            print("webbrowser.open exception:", e)
+            print("ブラウザ起動エラー:", e)
 
     threading.Thread(target=open_browser, daemon=True).start()
-    print("Starting Flask on 127.0.0.1:5000")
     app.run(host="127.0.0.1", port=5000, debug=False, use_reloader=False)
